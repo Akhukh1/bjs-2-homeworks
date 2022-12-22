@@ -17,7 +17,7 @@ class AlarmClock {
     }
 
     let addCall = {
-        // id: this.intervalId + 1,
+      // id: ,
       time: runTime,
       canCall: true,
       callback: runFunc
@@ -28,13 +28,9 @@ class AlarmClock {
   }
 
   removeClock(time) {
-    
-    let firstArr = this.alarmCollection;
-
     let newArr = this.alarmCollection.filter((delTime, index, array) => 
     { return delTime.time !== time });
     this.alarmCollection = newArr;
-
   }
 
   getCurrentFormattedTime() {
